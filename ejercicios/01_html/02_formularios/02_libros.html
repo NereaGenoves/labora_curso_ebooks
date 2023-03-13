@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N de Nerea</title>
+    <style>
+        header {
+            background-color: black;
+        }
+
+        h1, #novedad {
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        h2 {
+            color: darkred;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            padding: 8px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .border {
+            border: 1px solid darkred;
+            border-radius: 10px;
+            background-color: #fff7f7;
+            text-align: center;
+        }
+
+        #datos {
+            border: 1px solid darkred;
+            border-radius: 10px;
+            background-color: #fff7f7;
+            width: 350px;
+            height: 200px;
+        }
+
+        #dato {
+            text-align: justify;
+        }
+
+        #responsive {
+            width: 30%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .responsive {
+            width: 90%;
+            height: auto;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>N de Nerea</h1>
+    <h2 id="novedad">Novedades</h2>
+</header>
+<section>
+    <h2>¡Nuevo libro de <a
+            href="https://linktr.ee/nereagenoves?fbclid=PAAaZUxuz4weU77K5t7j7nxtUddk8nyaoCQFHPTpD0x8hYShMoeY91RDgDzvk">Nerea
+        Genovés!</a></h2>
+    <article>
+        <h3 id="dato">Datos técnicos:</h3>
+        <p id="datos"><strong>Nombre de la obra: </strong>El renacer de Lucifer. <br><br>
+            <strong>Tipo de libro:</strong> Novela <br><br>
+            <strong>Género:</strong> Fantasía juvenil romántica <br><br>
+            <strong> Número de páginas:</strong> 302 <br><br>
+            <strong>Edad recomendada para la lectura:</strong> +12 años <br> <br>
+            <strong>Fecha de salida:</strong> 28 de noviembre de 2021
+        </p>
+        <h3>Portada</h3>
+        <figure>
+            <img id="responsive" src="../../../img/01img_html/lucifer.png" alt="Portada de El renacer de Lucifer">
+            <figcaption>
+                <small> Portada realizada por la misma autora. </small>
+            </figcaption>
+        </figure>
+        <h3>Sinopsis</h3>
+        <p class="border">
+            Camila lleva viendo demonios desde que era una niña, ¿quizá a causa de ese anillo que encontró? Curiosamente
+            lleva una vida normal, hasta que de golpe todo se desmorona. <br>¿Astaroth habrá venido a ayudarla? ¿O
+            formará
+            parte de un plan mayor del que Camila no sabe nada? Un mundo por descubrir donde nada es lo que parece.
+            <br>¿Quiénes son los buenos?
+            <br>¿Quién tiene algo que ocultar?<br> ¿Merece la pena ser salvado? <br>Y lo más importante… <br>¿Por qué
+            Lucifer está en un
+            cuerpo de vampira? </p>
+
+        <h3>Fragmento:</h3>
+        <figure>
+            <img class=responsive src="../../../img/01img_html/luci.png" alt="Fragmento sacado del libro">
+        </figure>
+    </article>
+    <article>
+        <h3>Enlaces de compra:</h3>
+        <form action="https://www.amazon.es/El-renacer-Lucifer-Nerea-Genov%C3%A9s/dp/1914576624/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1677781080&sr=8-1">
+            <button type="submit">Comprar en Amazon</button>
+        </form>
+        <form action="01_libro.html">
+            <button type="submit">Comprar ejemplar a la escritora</button>
+        </form>
+    </article>
+</section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Link para ponerle otros colores y esas cosas */
+#ejercicio1 a:link {
+    text-decoration: none;
+    color: darkred;
+}
+
+#ejercicio1 a:visited {
+    text-decoration: none;
+    color: #770d0d;
+}
+
+#ejercicio1 a:hover {
+    text-decoration: underline;
+    color: #235276;
+}
+
+/*Convertir un link en un boton*/
+
+#ejercicio2 a:link {
+    text-decoration: none;
+    color: white;
+    background-color: #e34c4c;
+    padding: 12px;
+}
+
+#ejercicio2 a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #770d0d;
+}
+
+#ejercicio2 a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: #e34c4c;
+    padding: 12px;
+}
+
+/* Lo que conozco como interlineado */
+#ejercicio2 p {
+    line-height: 30px;
+}
+
+/*Poner el borde con sombra */
+article {
+    background-color: #ffffff;
+    border-left: 3px solid #6464b4;
+    box-shadow: 5px 5px 2px #b7b4b4;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    width: auto;
+    height: auto;
+}
+
+article#ejercicio3 a.one:hover {
+    color: #e1d01d;
+}
+
+article#ejercicio3 a.two:hover {
+    font-size: 30px;
+}
+
+article#ejercicio3 a.three:hover {
+    background-color: #94f39f;
+}
+
+article#ejercicio3 a.four:hover {
+    font-family: monospace;
+}
+
+article#ejercicio3 a.five:link {
+    text-decoration: none;
+}

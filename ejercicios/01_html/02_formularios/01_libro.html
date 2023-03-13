@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de compra</title>
+    <style>
+        header {
+            background-color: black;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Formulario de compra</h1>
+</header>
+<section>
+    <form action="03_libros.html" method="post" id="01form">
+        <label for="progress01">Progreso:</label>
+        <progress id="progress01" max="100" value="33">33%</progress>
+        <fieldset>
+            <legend><h2>Selecione el libro que desea:</h2></legend>
+            <input type="checkbox" id="libro1" name="libro1" value="lucifer"><label for="libro1">El renacer de Lucifer</label><br/>
+            <input type="checkbox" id="libro2" name="libro2" value="traición" ><label for="libro2">Crónica de fuego y traición</label><br/>
+            <input type="checkbox" id="libro3" name="libro3" value="fría" ><label for="libro3">A sangre fría</label><br/>
+        </fieldset>
+
+        <button type="submit">Comprar</button>
+    </form>
+</section>
+</body>
+</html>

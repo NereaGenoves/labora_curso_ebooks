@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuestionario</title>
+    <style>
+        h2, p {
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 12px;
+            background-color: #fde8e8;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Encuesta de cine</h1>
+    <p>Esta encuesta ha sido enviada a todos los estudiantes de creacción de documentos digitales del TAME, por favor,
+        responda esta encuesta con total sinceridad con el fin de que los datos sean útiles para su estudio a
+        posteriori. </p>
+</header>
+<section>
+    <form action="" id="01form" method="post">
+        <fieldset>
+            <legend><h2>Datos personales</h2></legend>
+            <label for="id_nombre"> Nombre:</label><br/>
+            <input type="text" name="nombre" id="id_nombre" placeholder="Pepito"> <br/>
+            <label for="id_apellido"> Apellido:</label><br/>
+            <input type="text" name="apellido" id="id_apellido" placeholder="De Los Palotes"><br/>
+            <label for="id_dni"> DNI:</label><br/>
+            <input type="text" name="dni" id="id_dni" placeholder="12345678A"><br/>
+            <label for="id_edad">Edad:</label><br/>
+            <input type="text" name="edad" id="id_edad" placeholder="19"><br/>
+            <label for="list_sexo">Sexo:</label><br>
+            <input id="list_sexo" list="sexos">
+            <datalist id="sexos">
+                <option label="m" value="mujer"></option>
+                <option label="h" value="hombre"></option>
+                <option label="nob" value="nobinario"></option>
+                <option label="ns" value="prefiero no responder"></option>
+            </datalist>
+        </fieldset>
+        <br>
+        <hr>
+        <fieldset>
+            <legend><h2>Mejor película</h2></legend>
+            <input type="radio" id="1pelicula" name="pelicula" value="Liberty Valance" checked><label for="1pelicula">El
+            hombre que mató a Liberty Valance</label><br>
+            <input type="radio" id="2pelicula" name="pelicula" value="Rio rojo"><label for="2pelicula">Rio rojo</label><br>
+            <input type="radio" id="3pelicula" name="pelicula" value="Atraco"><label for="3pelicula">Atraco perfecto</label><br>
+            <input type="radio" id="4pelicula" name="pelicula" value="Centauros"><label for="4pelicula">Centauros del desierto</label><br>
+        </fieldset>
+        <br>
+        <hr>
+        <fieldset>
+            <legend><h2>Seleciona las películas que has visto:</h2></legend>
+            <input type="checkbox" id="p1" name="p1" value="Rio"><label for="p1">Rio Bravo</label><br/>
+            <input type="checkbox" id="p2" name="p2" value="tren" ><label for="p2">El último tren a Gun Hill</label><br/>
+            <input type="checkbox" id="p3" name="p3" value="peligro" ><label for="p3">Sólo ante el peligro</label><br/>
+            <input type="checkbox" id="p4" name="p4" value="mision"><label for="p4">Misión de audaces</label><br/>
+            <input type="checkbox" id="p5" name="p5" value="sargento"><label for="p5">El sargento negro</label><br/>
+        </fieldset>
+        <br>
+        <hr>
+        <fieldset>
+            <legend><h2>Argumento de tu película favorita:</h2></legend>
+            <label for="id_comentario"></label>
+            <textarea name="comentario" id="id_comentario" cols="50" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">&nbsp;&nbsp;
+        <input type="reset" value="Borrar">
+    </form>
+
+
+</section>
+</body>
+</html>

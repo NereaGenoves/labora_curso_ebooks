@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        article {
+			position: relative;
+            border: 1px solid black;
+			width: 90%;
+			height: 800px;
+        }
+
+        #uno {
+            position: relative;
+z-index: 1;
+        }
+		#uno:hover{
+			z-index: 5;
+		}
+
+        #dos {
+            position: relative;
+            bottom: 520px;
+			left: 30px;
+			z-index: 2;
+        }
+		#dos:hover{
+			z-index: 5;
+		}
+		#tres {
+			position: relative;
+			bottom: 1040px;
+			left: 60px;
+			z-index: 3;
+		}
+		#tres:hover{
+			z-index: 5;
+		}
+		#cuatro{
+			position: relative;
+			bottom: 1560px;
+			left: 90px;
+			z-index: 4;
+		}
+		#cuatro:hover{
+			z-index: 5;
+		}
+
+    </style>
+</head>
+<body>
+<section>
+    <article id="ejercicio1">
+        <h2>Propiedad display: z-index</h2>
+        <div id="uno">
+            <figure><img src="../../../img/02img_css/rey1.png" alt="rey 1" height="547" width="332"/></figure>
+        </div>
+        <div id="dos">
+            <figure><img src="../../../img/02img_css/rey2.png" alt="rey 2" height="547" width="333"/></figure>
+        </div>
+        <div id="tres">
+            <figure><img src="../../../img/02img_css/rey3.png" alt="rey 3" height="550" width="333"/></figure>
+        </div>
+        <div id="cuatro">
+            <figure><img src="../../../img/02img_css/rey4.png" alt="rey 4" height="550" width="333"/></figure>
+        </div>
+    </article>
+
+</section>
+</body>
+</html>
+

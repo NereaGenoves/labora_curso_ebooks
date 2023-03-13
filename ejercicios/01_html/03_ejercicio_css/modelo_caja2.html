@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Modelo de caja</title>
+
+    <style>
+        article {
+            background-color: #dddddd;
+            border: 10px solid green;
+            overflow: scroll;
+            height: 200px;
+            width: auto;
+            padding: 50px 50px 50px;
+            margin-right: 100px;
+        }
+        a:link {
+            text-decoration: none;
+            color: white;
+            background-color: #000000;
+            padding: 12px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #b4b4b4;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+            background-color: #e34c4c;
+            padding: 12px;
+        }
+        .css{
+            color: blue;
+        }
+        .html{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+<section>
+<h2>Demonstrating the <a href="https://www.google.com/">Box Model</a></h2>
+
+<p>The <span class="css">CSS</span> box model is essentially a box that wraps around every <span class="html">HTML</span> element.
+  It consists of: borders, padding, margins, and the actual content.</p>
+
+<article> <p>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</article>
+</section>
+</body>
+
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <style>
+        h2,p{
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 12px;
+            background-color: #f3e1e1;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Encuesta: mejor película, actor y director</h1>
+    <p>Esta encuesta ha sido enviada a los critcos de cine más selectos entre los que usted, lector, se encuentra. Por
+        favor, responda con sinceridad. La encuesta es anónima. </p>
+</header>
+<section>
+    <form action="" id="01form" method="post">
+    <fieldset>
+        <legend><h2>Mejor película</h2></legend>
+        <input type="radio" id="1pelicula" name="pelicula" value="Liberty Valance" checked><label for="1pelicula">El
+        hombre que mató a Liberty Valance</label><br>
+        <input type="radio" id="2pelicula" name="pelicula" value="Sed"><label for="2pelicula">Sed de mal</label><br>
+        <input type="radio" id="3pelicula" name="pelicula" value="Atraco"><label for="3pelicula">Atraco perfecto</label><br>
+        <input type="radio" id="4pelicula" name="pelicula" value="Juan Nadie"><label for="4pelicula">Juan
+        Nadie</label><br>
+    </fieldset>
+    <br>
+    <hr>
+    <fieldset>
+        <legend><h2>Mejor actor</h2></legend>
+        <input type="radio" id="1actor" name="actor" value="Paul"><label for="1actor">Paul Newman</label><br>
+        <input type="radio" id="2actor" name="actor" value="John"><label for="2actor">John Wayne</label><br>
+        <input type="radio" id="3actor" name="actor" value="Cary"><label for="3actor">Cary Grant</label><br>
+        <input type="radio" id="4actor" name="actor" value="James" checked><label for="4actor">James Stewart</label><br>
+    </fieldset>
+    <br>
+    <hr>
+    <fieldset>
+        <legend><h2>Mejor director</h2></legend>
+        <input type="radio" id="1director" name="director" value="Alfred"><label for="1director">Alfred
+        Hitchcock</label><br>
+        <input type="radio" id="2director" name="director" value="JohnF"><label for="2director">John Ford</label><br>
+        <input type="radio" id="3director" name="director" value="Frank"><label for="3director">Frank Capra</label><br>
+        <input type="radio" id="4director" name="director" value="Howard" checked><label for="4director">Howard
+        Hawks</label><br>
+    </fieldset>
+    <br>
+    <hr>
+        <fieldset>
+            <legend><h2>Comentarios:</h2></legend>
+            <label for="id_comentario"></label>
+            <textarea name="comentario" id="id_comentario" cols="50" rows="10"></textarea>
+        </fieldset>
+    <input type="submit" value="Enviar">&nbsp;&nbsp;
+    <input type="reset" value="Borrar">
+    </form>
+</section>
+</body>
+</html>
