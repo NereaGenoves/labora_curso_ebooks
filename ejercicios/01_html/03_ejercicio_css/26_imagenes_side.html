@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="imagenes/png" href="img/logo_web.png" />
+    <title>Images side by side</title>
+    <style>
+      /*hola, Rafa. He puesto este comentario para que te acuerdes de que sé hacerlos <3.*/
+      *{
+        box-sizing: border-box;
+      }
+.clearfix{
+  clear: both;
+  display: table;
+}
+img{
+  width: 95%;
+  height: auto;
+}
+.img-container{
+float: left;
+  width: 33%;
+  padding: 170px;
+}
+p.pseudoclase::before{
+  content: "Inicio del parrafo (añadido con un pseudo-class::before)";
+  color: red;
+
+}
+p.pseudoclase::after{
+  content: "-texto añadido con pseudo-class::after";
+  color: blue;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Images side by side</h1>
+    </header>
+    <section>
+      <p>Float images side by side</p>
+      <div class="clearfix">
+        <div class="img-container">
+          <img src="../../../img/01img_html/lucifer.png" alt="lucifer" style="width: 100%;" />
+        </div>
+        <div class="img-container">
+          <img src="../../../img/01img_html/libross.jpg" alt="Forest" style="width: 100%;" />
+        </div>
+        <div class="img-container">
+          <img
+            src="../../../img/01img_html/sol.jpg"
+            alt="Mountains"
+            style="width: 100%;"
+          />
+        </div>
+      </div>
+      <p class="pseudoclase">
+        Note that we also use the clearfix hack to take care of the layout flow,
+        and that we add the box-sizing property to make sure that the image
+        container doesn´t break due to extra padding. Try to remove this code to
+        see the effect
+      </p>
+    </section>
+    <footer>
+      <details>
+        <summary> &copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+      </details>
+     
+    </footer>
+  </body>
+</html>

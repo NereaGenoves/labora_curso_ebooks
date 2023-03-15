@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="imagenes/png" href="img/logo_web.png"/>
+    <title>Position</title>
+    <style>
+        *{
+            user-select: none;
+        }
+        .container {
+            position: relative;
+        }
+
+        .container > img {
+            height: auto;
+            width: 95%;
+            opacity: 30%;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 1%;
+            left: 4%;
+            font-size: 18px;
+        }
+
+        .topright {
+            position: absolute;
+            top: 1%;
+            right: 10%;
+            font-size: 18px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 3%;
+            left: 4%;
+            font-size: 18px;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 3%;
+            right: 10%;
+            font-size: 18px;
+        }
+
+        .center {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            color: #ffe9b9;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Position</h1>
+</header>
+<section>
+    <h2>Image Text</h2>
+    <p>Add some text to an image in the top left corner:</p>
+    <div class="container">
+        <img src="../../../img/01img_html/lucifer.png" alt="portada"/>
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Centered</div>
+    </div>
+</section>
+<footer>
+    <details>
+        <summary>&copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>
